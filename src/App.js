@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import { useEffect, useState } from "react";
-import { Button, FormControl, InputLabel, Input } from "@material-ui/core";
+import { FormControl, Input } from "@material-ui/core";
 import Message from "./components/Message";
 import db from "./firebase";
 import firebase from "firebase";
@@ -48,7 +48,7 @@ function App() {
   };
   return (
     <div className="App">
-      <img className="App-logo" src="https://static.xx.fbcdn.net/rsrc.php/yd/r/hlvibnBVrEb.svg"/>
+      <img className="App-logo" src="https://static.xx.fbcdn.net/rsrc.php/yd/r/hlvibnBVrEb.svg" alt=""/>
       <h1>Messenger Clone</h1>
       <p>Welcome {!username ? 'Guest' : username} </p>
       {/* to make the enter key work wrap the input and btn inside a form  and set btn type to submit */}
